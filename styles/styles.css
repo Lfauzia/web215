@@ -1,0 +1,48 @@
+/* my WEB215 styles would go here */
+
+body {
+    background-color: #ffd3b6;
+
+  }
+  
+  .header {  
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav {
+    background-color: #ffe1cc;
+    padding: 20px;
+    text-align: center
+
+  }
+  
+  nav a {   
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+
+  nav a:hover {
+    background-color: #ffd3b6;
+    color: #000000;
+  }
+
+  .button {
+    background-color: #ffd9a4;
+    color: 
+  }
+
+  img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%;
+  }
+  
+.footer{
+    background-color: #ffe1cc;
+    padding: 10px;
+    text-align: center
+
+  }
