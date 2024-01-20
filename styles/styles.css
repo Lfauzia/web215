@@ -16,12 +16,16 @@ body {
     text-align: center
 
   }
+
+  a{
+    color: inherit;
+  }
   
   nav a {   
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 
   nav a:hover {
@@ -29,10 +33,7 @@ body {
     color: #000000;
   }
 
-  .button {
-    background-color: #ffd9a4;
-    color: green;
-  }
+  
 
   img {
     display: block; 
@@ -42,7 +43,7 @@ body {
   
 .footer{
     background-color: #ffe1cc;
-    padding: 10px;
+    padding: 20px;
     text-align: center
 
   }
