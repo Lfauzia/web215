@@ -49,19 +49,4 @@ body {
 
 
 
-  .footer-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .validator-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 176px; /* Total width of both buttons */
-  }
-  
-  .validator-button {
-    margin-right: 5px; /* Adjust spacing between buttons if needed */
-  }
   
