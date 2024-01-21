@@ -13,12 +13,12 @@ body {
   .nav {
     background-color: #ffe1cc;
     padding: 20px;
-    text-align: center
-
+    text-align: center; 
   }
 
   a{
     color: inherit;
+   
   }
   
   nav a {   
@@ -27,11 +27,13 @@ body {
     margin: 0 10px;
     border-radius: 8px;
     background-color: #ffd3b6;
+  
   }
 
   nav a:hover {
-    background-color: #ffe1cc;
+    background-color: #f7b587;
     color: #000000;
+    
   }
 
   
