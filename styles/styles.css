@@ -12,11 +12,12 @@ body {
   h1{
     
   }
-  
+#welcome{
+  text-align: center;
+ } 
 
 main{
-  
-    width: 60%; 
+    width: 95%; 
     margin: 0 auto; /* Center the main content */
 }
 
@@ -71,16 +72,11 @@ main{
 }
 
 
-.corbeau{
+.corbeau,.signature{
   text-align: center;
   font-style: italic;
-
 }
 
-.signature{
-  font-style: italic;
-
-}
 .sign , .web{
   text-decoration: underline;
 }
