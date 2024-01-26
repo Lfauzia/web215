@@ -5,6 +5,12 @@ body {
 
   }
   
+  h1, h2, h3{
+    text-align: center; 
+
+  }
+
+
   .header {  
     padding: 20px;
     text-align: center;
@@ -40,7 +46,6 @@ body {
   img {
     display: block; 
     margin: 0 auto; 
-    max-width: 100%;
   }
   
 .footer{
@@ -50,7 +55,6 @@ body {
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar at the bottom of the page */
     width: 96.8%;  
-    text-decoration: none;
     overflow: auto;
     font-size: small;
 }
