@@ -2,14 +2,18 @@
 
 body {
     background-color: #ffd3b6;
-
+   
   }
   
   h1, h2, h3{
-    text-align: center; 
+     text-align: center;
 
   }
-
+main{
+  
+    width: 60%; 
+    margin: 0 auto; /* Center the main content */
+}
 
   .header {  
     padding: 20px;
@@ -70,4 +74,3 @@ body {
   font-style: italic;
 
 }
-
