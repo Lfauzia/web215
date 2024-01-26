@@ -89,12 +89,18 @@ figure{
   text-decoration: underline;
 }
 
+.active {
+  background-color: #f7b587 ;
+  
+
+}
+
 #container{
   background-color: #fbe8da; /* Light background color for the container */
-    max-width: 850px; /* Adjust the maximum width of the container */
-    margin: 10px auto; /* Center the container on the page and add top margin */
-    padding: 10px; /* Add padding inside the container */
-    text-align: center;
-    margin-bottom: 10px; /* Add margin to the heading and paragraphs for spacing */
-    border-radius: 50px;
+  max-width: 850px; /* Adjust the maximum width of the container */
+  margin: 10px auto; /* Center the container on the page and add top margin */
+  padding: 10px; /* Add padding inside the container */
+  text-align: center;
+  margin-bottom: 10px; /* Add margin to the heading and paragraphs for spacing */
+  border-radius: 50px;
 }
