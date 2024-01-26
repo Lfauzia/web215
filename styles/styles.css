@@ -45,14 +45,16 @@ body {
   
 .footer{
     background-color: #ffe1cc;
-    padding: 20px;
-    text-align: center
-
-  }
-
-.footer-p{
-  text-align: center
+    padding:  0px 18px; 
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar at the bottom of the page */
+    width: 96.8%;  
+    text-decoration: none;
+    overflow: auto;
+    font-size: small;
 }
+
 
 .corbeau{
   text-align: center;
@@ -63,4 +65,13 @@ body {
 .signature{
   font-style: italic;
 
+}
+
+
+foot{
+
+  
+  padding:
+ 
+  
 }
