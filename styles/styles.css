@@ -103,3 +103,12 @@ figure{
   margin-bottom: 10px; /* Add margin to the heading and paragraphs for spacing */
   border-radius: 50px;
 }
+
+
+/*  form container*/
+#form-cont{
+  background-color: #fbe8da;
+  max-height: max-content;
+  max-width: fit-content;
+
+}
