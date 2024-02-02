@@ -109,15 +109,45 @@ figure{
 #form-cont{
   background-color: #fbe8da;
   width: 800px;
-  height: 500px;
-  text-align: center;
+  height: 650px;
+  margin: 10px auto;
+  text-align: left;
+  padding: 20px;
+  border-radius: 50px;
 
 }
 label {
   margin-right:600px;
+  display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
+    /* Add margin to separate labels */
+
+}
+
+input[type="text"],
+input[type="file"],
+textarea{
+ width: 70%; /* Adjust the width as needed */
+ padding: 8px;
+ margin-bottom: 10px;
+ display: inline-block;
+
 
 }
 textarea{
- margin-left: 80px ;
+  resize: vertical; /* Allow vertical resizing of textarea */}
 
+input[type="submit"] {
+  background-color: #f7b587;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #e69e6a;
 }
