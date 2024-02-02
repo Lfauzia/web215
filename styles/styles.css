@@ -108,10 +108,10 @@ figure{
 /*  form container*/
 #form-cont{
   background-color: #fbe8da;
-  width: 800px;
+  width: 600px;
   height: 800px;
   margin: 10px auto;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px; 
   border-radius: 50px;
   padding: 50px; 
@@ -119,12 +119,13 @@ figure{
 }
 label {
   margin-right:200px;
-    display: inline-block;
-    margin-bottom: 10px; /*create a br*/
+  display: inline-block;
+  margin-bottom: 20px; /*create a br*/
 }
 textarea{
  
-
+ 
+ 
 }
 
 input[type="text"],
@@ -132,7 +133,7 @@ input[type="file"],
 input[type="checkbox"],
 input[type="radio"] {
     margin-bottom: 10px; /* Add some space between inputs */
-
+    
 }
 
 input[type="submit"]:hover {
