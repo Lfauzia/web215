@@ -108,7 +108,16 @@ figure{
 /*  form container*/
 #form-cont{
   background-color: #fbe8da;
-  max-height: max-content;
-  max-width: fit-content;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+
+}
+label {
+  margin-right:600px;
+
+}
+textarea{
+ margin-left: 80px ;
 
 }
