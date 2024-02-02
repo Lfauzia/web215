@@ -119,11 +119,19 @@ figure{
 }
 label {
   margin-right:200px;
-  display: inline-block;
-  vertical-align: top; /*create a br*/
+    display: inline-block;
+    margin-bottom: 10px; /*create a br*/
 }
 textarea{
- margin-right: 80px ;
+ 
+
+}
+
+input[type="text"],
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 10px; /* Add some space between inputs */
 
 }
 
