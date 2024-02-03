@@ -105,7 +105,7 @@ figure{
 }
 
 
-/*  form */
+/* form */
 #form-cont{
   background-color: #fbe8da;
   width: 640px;
@@ -157,6 +157,10 @@ label {
   margin-left: 350px;
 }
 
+#user-photo{
+  margin-left: 50px;
+}
+
 input[type="submit"]:hover {
   background-color: #e69e6a;
 }
@@ -171,8 +175,6 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-#user-photo{
-  margin-left: 50px;
-}
+
 
 /* form end  */
