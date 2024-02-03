@@ -105,11 +105,11 @@ figure{
 }
 
 
-/*  form container*/
+/*  form */
 #form-cont{
   background-color: #fbe8da;
-  width: 600px;
-  height: 800px;
+  width: 640px;
+  height: 680px;
   margin: 10px auto;
   text-align: left;
   margin-bottom: 20px; 
@@ -122,18 +122,39 @@ label {
   display: inline-block;
   margin-bottom: 20px; /*create a br*/
 }
-textarea{
- 
- 
+#personalbackgroung{
+  margin-left: -4px;
  
 }
+#probackgroung{
+  margin-left: -26px;
 
-input[type="text"],
-input[type="file"],
-input[type="checkbox"],
-input[type="radio"] {
-    margin-bottom: 10px; /* Add some space between inputs */
-    
+}
+#acabackgroung{
+  margin-left: -9px;
+}
+
+#subbackgroung{
+  margin-left: -39px;
+ 
+}
+#platform{
+  margin-left: -42px;
+}
+#coursebackgroung{
+  margin-left: -32px;
+}
+
+#funny{
+  margin-left: -73px;
+}
+
+#favpro{
+  margin-left: -88px;
+}
+
+#submit{
+  margin-left: 350px;
 }
 
 input[type="submit"]:hover {
@@ -149,3 +170,9 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 16px;
 }
+
+#user-photo{
+  margin-left: 50px;
+}
+
+/* form end  */
