@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Academic Background:</strong> ${academicBackground}</p>
             <p><strong>Subject Background:</strong> ${subjectBackground}</p>
             <p><strong>Platform:</strong> ${platform}</p>
-            <p><strong>Courses:</strong></p>
+            <p><strong>>Courses I'm taking & why:</strong></p>
             <ul>
                 ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
             </ul>
