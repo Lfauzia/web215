@@ -53,8 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const programmingLanguages = document.querySelectorAll('input[name="programinglanguages"]:checked');
         const userPhoto = document.getElementById('user-photo').files[0];
         const caption = document.getElementById('photocaption').value;
-    
-        // Build the results HTML
+        const formattedCourses = coursesList.map(course => course.replace(/(WEB250-N801-|WEB215-N801-|CSC221-N801)/g, '<strong>$1</strong>'));
+
+        // results HTML
         const resultsHTML = `
             <div style="text-align: center;">
                 <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 250px;">
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Platform:</strong> ${platform}</p>
             <p><strong>Courses:</strong></p>
             <ul>
-                ${coursesList.map(course => `<li>${course}</li>`).join('')}
+                ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
             </ul>
             <p><strong>Funny Item:</strong> ${funnyItem}</p>
             <p><strong>Enjoy Coding:</strong> ${enjoyCoding}</p>
