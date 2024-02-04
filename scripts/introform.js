@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const resultsHTML = `
             <div style="text-align: center;">
                 <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 250px;">
-                <figcaption style="font-style: italic;">"${caption}"</figcaption>
+                <figcaption style="font-style: italic;">${caption}</figcaption>
             </div>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Personal Background:</strong> ${personalBackground}</p>
