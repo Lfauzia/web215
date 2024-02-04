@@ -27,7 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function displayResults() {
-        const resultsContainer = document.getElementById('results-container');
+        const formContainer = document.getElementById('form-cont');
+        const formBackgroundColor = window.getComputedStyle(formContainer).getPropertyValue('background-color');
+        const formPadding = window.getComputedStyle(formContainer).getPropertyValue('padding');
+        const formBoxShadow = window.getComputedStyle(formContainer).getPropertyValue('box-shadow');
+        const formBorderRadius = window.getComputedStyle(formContainer).getPropertyValue('border-radius');
+    
+        const resultsContainer = document.createElement('div');
+        resultsContainer.style.backgroundColor = formBackgroundColor; // Set the background color
+        resultsContainer.style.padding = formPadding; // Set the padding
+        resultsContainer.style.boxShadow = formBoxShadow; // Set the box shadow
+        resultsContainer.style.borderRadius = formBorderRadius; // Set the border radius
     
         // Get values from the form
         const name = document.getElementById('fullname').value;
@@ -36,35 +46,41 @@ document.addEventListener('DOMContentLoaded', function () {
         const academicBackground = document.getElementById('acabackgroung').value;
         const subjectBackground = document.getElementById('subbackgroung').value;
         const platform = document.getElementById('platform').value;
-        const courses = document.getElementById('coursebackgroung').value;
+        const coursesRaw = document.getElementById('coursebackgroung').value;
+        const coursesList = coursesRaw.split(',').map(course => course.trim()); // Split courses and trim whitespace
         const funnyItem = document.getElementById('funny').value;
         const enjoyCoding = document.querySelector('input[name="enjoycoding"]:checked').value;
         const programmingLanguages = document.querySelectorAll('input[name="programinglanguages"]:checked');
         const userPhoto = document.getElementById('user-photo').files[0];
-        const caption = document.getElementById('photocaption').value; // Added line
+        const caption = document.getElementById('photocaption').value;
     
         // Build the results HTML
         const resultsHTML = `
-            <h2>Submitted Information</h2>
-            <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo"> <!-- Moved image tag here -->
-            <p><strong>Caption:</strong> ${caption}</p> <!-- Added line -->
+            <div style="text-align: center;">
+                <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 200px;">
+                <figcaption style="font-style: italic;">"${caption}"</figcaption>
+            </div>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Personal Background:</strong> ${personalBackground}</p>
             <p><strong>Professional Background:</strong> ${professionalBackground}</p>
             <p><strong>Academic Background:</strong> ${academicBackground}</p>
             <p><strong>Subject Background:</strong> ${subjectBackground}</p>
             <p><strong>Platform:</strong> ${platform}</p>
-            <p><strong>Courses:</strong> ${courses}</p>
+            <p><strong>Courses:</strong></p>
+            <ul>
+                ${coursesList.map(course => `<li>${course}</li>`).join('')}
+            </ul>
             <p><strong>Funny Item:</strong> ${funnyItem}</p>
             <p><strong>Enjoy Coding:</strong> ${enjoyCoding}</p>
             <p><strong>Programming Languages:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</p>
         `;
     
-        // Replace the form with the results on the page
+        // Append the results to the form container
         resultsContainer.innerHTML = resultsHTML;
-        document.getElementById('form-cont').style.display = 'none';
+        formContainer.parentNode.insertBefore(resultsContainer, formContainer.nextSibling);
+        formContainer.style.display = 'none'; // Hide the form
     }
-    
+          
     
     function previewUserPhoto() {
     const userPhotoInput = document.getElementById('user-photo');
