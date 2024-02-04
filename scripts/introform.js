@@ -66,14 +66,14 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Professional Background:</strong> ${professionalBackground}</p>
             <p><strong>Academic Background:</strong> ${academicBackground}</p>
             <p><strong>Subject Background:</strong> ${subjectBackground}</p>
-            <p><strong>Platform:</strong> ${platform}</p>
-            <p><strong>>Courses I'm taking & why:</strong></p>
+            <p><strong>Primary Computer Platform:</strong> ${platform}</p>
+            <p><strong>Courses I'm taking & why:</strong></p>
             <ul>
                 ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
             </ul>
-            <p><strong>Funny Item:</strong> ${funnyItem}</p>
-            <p><strong>Enjoy Coding:</strong> ${enjoyCoding}</p>
-            <p><strong>Programming Languages:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</p>
+            <p><strong>Funny Item to Remember me by:</strong> ${funnyItem}</p>
+            <p><strong>Do you enjoy coding?</strong> ${enjoyCoding}</p>
+            <p><strong>Programming languages you know:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</p>
         `;
     
         // Append the results to the form container
