@@ -41,10 +41,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const enjoyCoding = document.querySelector('input[name="enjoycoding"]:checked').value;
         const programmingLanguages = document.querySelectorAll('input[name="programinglanguages"]:checked');
         const userPhoto = document.getElementById('user-photo').files[0];
+        const caption = document.getElementById('photocaption').value; // Added line
     
         // Build the results HTML
         const resultsHTML = `
             <h2>Submitted Information</h2>
+            <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo"> <!-- Moved image tag here -->
+            <p><strong>Caption:</strong> ${caption}</p> <!-- Added line -->
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Personal Background:</strong> ${personalBackground}</p>
             <p><strong>Professional Background:</strong> ${professionalBackground}</p>
@@ -55,13 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
             <p><strong>Funny Item:</strong> ${funnyItem}</p>
             <p><strong>Enjoy Coding:</strong> ${enjoyCoding}</p>
             <p><strong>Programming Languages:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</p>
-            <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo">
         `;
     
         // Replace the form with the results on the page
         resultsContainer.innerHTML = resultsHTML;
         document.getElementById('form-cont').style.display = 'none';
     }
+    
     
     function previewUserPhoto() {
     const userPhotoInput = document.getElementById('user-photo');
