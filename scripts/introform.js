@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function validateForm() {
-        // Add validation logic for each input field
+        // my validation logic for each input field
         const photo = document.getElementById('user-photo').value;
         const caption = document.getElementById('photocaption').value;
         const name = document.getElementById('fullname').value;
 
-        // You can add more validation rules as needed
+        // more validation rules 
         if (photo === '' || caption === '' || name === '') {
             alert('Please fill out all required fields.');
             return false;
@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const formBorderRadius = window.getComputedStyle(formContainer).getPropertyValue('border-radius');
     
         const resultsContainer = document.createElement('div');
-        resultsContainer.style.backgroundColor = formBackgroundColor; // Set the background color
-        resultsContainer.style.padding = formPadding; // Set the padding
-        resultsContainer.style.boxShadow = formBoxShadow; // Set the box shadow
-        resultsContainer.style.borderRadius = formBorderRadius; // Set the border radius
+        resultsContainer.style.backgroundColor = formBackgroundColor; // background color
+        resultsContainer.style.padding = formPadding; //padding
+        resultsContainer.style.boxShadow = formBoxShadow; //box shadow
+        resultsContainer.style.borderRadius = formBorderRadius; //border radius
     
         // Get values from the form
         const name = document.getElementById('fullname').value;
