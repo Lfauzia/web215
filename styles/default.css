@@ -1,163 +1,90 @@
-/* my WEB215 styles would go here */
-
+/* Common styles */
 body {
-    background-color: #ffd3b6;
-    font-family: 'Halant', serif;
-    
-  }
-  
-h2{
+  background-color: #ffd3b6;
+  font-family: 'Halant', serif;
+  font-size: 20px;
+}
+
+h1, h2 {
   text-align: center;
   font-family: 'Halant', serif;
-  margin-bottom: 3px;
-  }
-  h1{
-    text-align: center;
-  font-family: 'Halant', serif;
-  margin-bottom: 0px;
-  font-size: x-large;
+}
 
-    
-  }
-#welcome{
+.header {
+  padding: 20px 20px; /* Equal padding on the left and right sides */
   text-align: center;
- } 
-
-main{
-    width: 95%; 
-    margin: 0 auto; /* Center the main content */
-    
 }
 
-  .header {  
-    padding: 10px;
-    text-align: center;
-    
-  }
-
-  .nav {
-    background-color: #ffe1cc;
-    padding: 15px; 
-    width: 97%;
-    float: left;
-    font-weight: 600;
-    font-size: large;
-  }
-
-  a{
-    color: inherit;  
-    text-decoration: none;
-
-  }
-  
-  nav a {   
-    text-decoration: none;
-    padding: 10px;
-    margin: 0 30px;
-    border-radius: 8px;
-  }
-
-  nav a:hover {
-    background-color: #f7b587;
-    color: #000000; 
-   
-  }
-  
-footer{
-    background-color: #ffe1cc;
-    padding:  0px 18px ; 
-    text-align: center;
-   
-    width: 96.8%;  
-    overflow: auto;
-    font-size: small;
-    
+.nav {
+  background-color: #ffe1cc;
+  padding: 15px;
+  width: 97%;
+  float: left;
+  font-weight: 600;
+  font-size: large;
 }
 
-.corbeau, figure{
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a {
+  padding: 10px;
+  margin: 0 30px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #f7b587;
+  color: #000000;
+}
+
+footer {
+  background-color: #ffe1cc;
+  padding: 20px 20px; /* Equal padding on the left and right sides */
   text-align: center;
-  font-style: italic;
+  width: 100%;
+  overflow: auto;
+  font-size: small;
 }
 
-.signature{
-  font-style: italic;
-}
-.sign , .web{
-  text-decoration: underline;
-}
-
-.active {
-  background-color: #f7b587 ;
-  
-
-}
-
-#container{
-  background-color: #fbe8da; /* Light background color for the container */
-  max-width: 850px; /* Adjust the maximum width of the container */
-  margin: 10px auto; /* Center the container on the page and add top margin */
-  padding: 10px; /* Add padding inside the container */
+/* Specific styles */
+#container {
+  background-color: #fbe8da;
+  max-width: 850px;
+  margin: 10px auto;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 10px; /* Add margin to the heading and paragraphs for spacing */
+  margin-bottom: 10px;
   border-radius: 50px;
-  box-shadow: 0 12px 18px #0000001A; 
+  box-shadow: 0 12px 18px #0000001A;
 }
 
-
-/* form */
-#form-cont{
+#form-cont {
   background-color: #fbe8da;
   width: 640px;
   height: 680px;
   margin: 10px auto;
   text-align: left;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   border-radius: 50px;
-  padding: 50px; 
-  box-shadow: 0 12px 18px #0000001A; 
+  padding: 50px;
+  box-shadow: 0 12px 18px #0000001A;
 }
 
 label {
-  margin-right:200px;
+  margin-right: 200px;
   display: inline-block;
-  margin-bottom: 20px; /*create a br*/
-}
-#personalbackgroung{
-  margin-left: -4px;
- 
-}
-#probackgroung{
-  margin-left: -26px;
-
-}
-#acabackgroung{
-  margin-left: -9px;
+  margin-bottom: 20px;
 }
 
-#subbackgroung{
-  margin-left: -39px;
- 
-}
-#platform{
-  margin-left: -42px;
-}
-#coursebackgroung{
-  margin-left: -32px;
-}
-
-#funny{
-  margin-left: -73px;
-}
-
-#favpro{
-  margin-left: -88px;
-}
-
-#submit{
+/* Adjustments for specific elements */
+#submit {
   margin-left: 350px;
 }
 
-#user-photo{
+#user-photo {
   margin-left: 50px;
 }
 
@@ -174,5 +101,3 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 16px;
 }
-
-/* form end  */
