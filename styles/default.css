@@ -1,6 +1,6 @@
-/* Common styles */
+/* Common styles  #faf1e7, #ffd3b6; */
 body {
-  background-color: #ffd3b6;
+  background-color:  #faf1e7;
   font-family: 'Halant', serif;
   font-size: 20px;
 }
@@ -18,7 +18,7 @@ header {
 }
 
 header > div {
-  background-color: #ffe1cc;
+  background-color: #fbe8da;
   padding: 15px;
   width: 97%;
   font-weight: 600; 
@@ -32,11 +32,10 @@ header > div a {
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 8px;
-  background-color: #ffe1cc;
 }
 
 header > div a:hover {
-  background-color: #f7b587;
+  background-color: #ffe1cc;
   color: #000000;
 }
 
@@ -73,7 +72,7 @@ nav a:hover {
 }
 
 footer {
-  background-color: #ffe1cc;
+  background-color: #fbe8da;
   padding: 20px 0px; /* Equal padding on the left and right sides */
   overflow: auto;
   font-size: small;
@@ -88,7 +87,6 @@ main > div {
   max-width: 850px;
   margin: 10px auto;
   padding: 10px;
-  text-align: center;
   margin-bottom: 10px;
   border-radius: 50px;
   box-shadow: 0 12px 18px #0000001A;
