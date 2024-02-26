@@ -12,8 +12,9 @@ h1, h2 , footer{
 
 header {
   text-align: center;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
+  border-bottom: 2px solid #ccc; /* Add a border bottom */
   
 }
 
@@ -42,14 +43,15 @@ header > div a:hover {
 main {
    
   margin: 0 auto; /* Center the main content */
+  
 }
 
-main > figure > figcaption  {
+main > div > figure > figcaption  {
   text-align: center;
   font-style: italic;
 }
 
-main > figure > img {
+main > div >  figure > img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -72,13 +74,13 @@ nav a:hover {
 }
 
 footer {
-  background-color: #fbe8da;
+  
   padding: 20px 0px; /* Equal padding on the left and right sides */
   overflow: auto;
-  font-size: small;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
+  max-width: 80%;
+  
   }
 
 /* Specific styles */
@@ -87,9 +89,9 @@ main > div {
   max-width: 850px;
   margin: 10px auto;
   padding: 10px;
-  margin-bottom: 10px;
   border-radius: 50px;
   box-shadow: 0 12px 18px #0000001A;
+  
 }
 
 #form-cont { 
