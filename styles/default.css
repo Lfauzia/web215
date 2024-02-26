@@ -7,15 +7,16 @@ body {
 
 h1, h2 {
   text-align: center;
-  font-family: 'Halant', serif;
+
 }
 
+
 header {
-  padding: 20px 20px; /* Equal padding on the left and right sides */
   text-align: center;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 header > div {
@@ -23,8 +24,39 @@ header > div {
   padding: 15px;
   width: 97%;
   float: left;
-  font-weight: 600;
-  font-size: large;
+  font-weight: 600; 
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Equal space between blocks */
+}
+
+/* Adjustments for specific elements */
+header > div a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #ffe1cc;
+}
+header > div a:hover {
+  background-color: #f7b587;
+  color: #000000;
+}
+
+main {
+   
+  margin: 0 auto; /* Center the main content */
+}
+
+
+main > figure > figcaption  {
+  text-align: center;
+  font-style: italic;
+}
+
+main > figure > img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 a {
@@ -33,8 +65,8 @@ a {
 }
 
 nav a {
-  padding: 10px;
-  margin: 0 30px;
+  padding: 10px 15px;
+  margin: 0 15px;
   border-radius: 8px;
 }
 
@@ -45,16 +77,21 @@ nav a:hover {
 
 footer {
   background-color: #ffe1cc;
-  padding: 20px 20px; /* Equal padding on the left and right sides */
+  padding: 20px 0px; /* Equal padding on the left and right sides */
+  
   text-align: center;
-  width: 100%;
   overflow: auto;
   font-size: small;
+  text-decoration: none; 
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+
   
-}
+  }
 
 /* Specific styles */
-#container {
+main {
   background-color: #fbe8da;
   max-width: 850px;
   margin: 10px auto;
@@ -65,16 +102,13 @@ footer {
   box-shadow: 0 12px 18px #0000001A;
 }
 
-#form-cont {
-  background-color: #fbe8da;
-  width: 640px;
+#form-cont { 
   height: 680px;
   margin: 10px auto;
   text-align: left;
   margin-bottom: 20px;
   border-radius: 50px;
-  padding: 50px;
-  box-shadow: 0 12px 18px #0000001A;
+  padding: 50px; 
 }
 
 label {
