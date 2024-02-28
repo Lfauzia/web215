@@ -63,6 +63,22 @@ main > div >  figure > img {
   max-width: 100%;
 }
 
+main p:nth-child(2) a {
+  text-decoration: underline;
+}
+
+#signature {
+  font-style: italic;
+}
+
+/* Additional styles */
+main a[href="https://lfauzia.github.io/web250/index.html"], 
+main a[href="https://lfauzia.github.io/web215/index.html"], 
+main a[href="https://lfauzia.github.io/web215/introduction.html"] {
+  text-decoration: underline;
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
