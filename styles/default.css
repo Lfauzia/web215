@@ -103,7 +103,7 @@ main > div {
 
 .logo {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 20%;
   transform: translateX(-60%);
   z-index: -1;
