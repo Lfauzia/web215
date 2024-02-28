@@ -78,6 +78,11 @@ main a[href="https://lfauzia.github.io/web215/introduction.html"] {
   text-decoration: underline;
 }
 
+a.active {
+  background-color: #ffe1cc;
+
+
+}
 
 a {
   color: inherit;
