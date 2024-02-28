@@ -48,10 +48,8 @@ header > div a:hover {
   color: #000000;
 }
 
-main {
-   
-  margin: 0 auto; /* Center the main content */
-  
+main {   
+  margin: 0 auto; /* Center the main content */  
 }
 
 main > div > figure > figcaption  {
