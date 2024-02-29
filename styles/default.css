@@ -12,7 +12,6 @@ body {
   
 }
 
-
 h1, h2 , footer{
   text-align: center;
 
@@ -80,8 +79,7 @@ main a[href="https://lfauzia.github.io/web215/introduction.html"] {
 
 a.active {
   background-color: #ffe1cc;
-
-
+  box-shadow: 0 10px 12px  #0000001A;
 }
 
 a {
