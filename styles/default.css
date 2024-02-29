@@ -134,7 +134,7 @@ main > div {
   position:absolute;
   margin-top: -130px; 
   display: block;
-  margin-right: 0;
+  right: 0;
   z-index: -1; 
 }
 
