@@ -131,10 +131,11 @@ main > div {
 
 
 .logo7 {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
+  position:absolute;
+  margin-top: -100px; 
+  display: block;
+  margin-right: 0;
+  z-index: -1; 
 }
 
 #form-cont { 
