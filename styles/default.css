@@ -99,8 +99,7 @@ nav a:hover {
   color: #000000;
 }
 
-footer {
-  
+footer {  
   padding: 20px 0px; /* Equal padding on the left and right sides */
   overflow: auto;
   margin-left: auto;
