@@ -20,9 +20,7 @@ h1, h2 , footer{
 header {
   text-align: center;
   max-width: 85%;
-  margin: 0 auto;
-  border-bottom: 2px solid #ccc; /*border bottom */
-  
+  margin: 0 auto; 
 }
 
 nav {
@@ -32,6 +30,7 @@ nav {
   font-weight: 600; 
   display: flex; /* Use flexbox */
   justify-content: space-around; /* Equal space between blocks */
+  border-bottom: 2px solid #ccc;
 }
 
 /* Adjustments for specific elements */
