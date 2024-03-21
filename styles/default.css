@@ -26,7 +26,7 @@ header {
   
 }
 
-header > div {
+nav {
   background-color: #fbe8da;
   padding: 15px;
   width: 97%;
@@ -36,28 +36,47 @@ header > div {
 }
 
 /* Adjustments for specific elements */
-header > div a {
+nav a {
   color: inherit;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 8px;
+  margin: 0 15px;
 }
 
-header > div a:hover {
+nav a:hover {
   background-color: #ffe1cc;
   color: #000000;
 }
 
-main {   
-  margin: 0 auto; /* Center the main content */    
+a.active {
+  background-color: #ffe1cc;
+  box-shadow: 0 10px 12px  #0000001A;
 }
 
-main > div > figure > figcaption  {
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Specific styles */
+main {
+  background-color: #fbe8da;
+  max-width: 850px;
+  margin: 10px auto;
+  padding: 10px 40px;
+  border-radius: 50px;
+  box-shadow: 0 12px 18px #0000001A;
+  /*margin-bottom: 15px; */
+  
+}
+
+main > figure > figcaption  {
   text-align: center;
   font-style: italic;
 }
 
-main > div >  figure > img {
+main > figure > img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -78,26 +97,8 @@ main a[href="https://lfauzia.github.io/web215/introduction.html"] {
   text-decoration: underline;
 }
 
-a.active {
-  background-color: #ffe1cc;
-  box-shadow: 0 10px 12px  #0000001A;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-nav a {
-  padding: 10px 15px;
-  margin: 0 15px;
-  border-radius: 8px;
-}
-
-nav a:hover {
-  background-color: #f7b587;
-  color: #000000;
-}
 
 footer {  
   padding: 20px 0px; /* Equal padding on the left and right sides */
@@ -107,16 +108,7 @@ footer {
   max-width: 85%;
   }
 
-/* Specific styles */
-main > div {
-  background-color: #fbe8da;
-  max-width: 850px;
-  margin: 10px auto;
-  padding: 10px 40px;
-  border-radius: 50px;
-  box-shadow: 0 12px 18px #0000001A;
-  /*margin-bottom: 15px; */
-}
+
 
 .logo {
   position: absolute;
