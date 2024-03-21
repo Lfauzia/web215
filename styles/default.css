@@ -97,9 +97,6 @@ main a[href="https://lfauzia.github.io/web215/introduction.html"] {
   text-decoration: underline;
 }
 
-
-
-
 footer {  
   padding: 20px 0px; /* Equal padding on the left and right sides */
   overflow: auto;
@@ -107,8 +104,9 @@ footer {
   margin-right: auto;
   max-width: 85%;
   }
-
-
+  /* footer p {
+    padding-bottom: -0;  Adjust this value as needed 
+  }*/
 
 .logo {
   position: absolute;
