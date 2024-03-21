@@ -63,7 +63,7 @@ a {
 main {
   background-color: #fbe8da;
   max-width: 850px;
-  margin: 10px auto;
+  margin: 7px auto;
   padding: 10px 40px;
   border-radius: 50px;
   box-shadow: 0 12px 18px #0000001A;
@@ -97,14 +97,6 @@ main a[href="https://lfauzia.github.io/web215/introduction.html"] {
   text-decoration: underline;
 }
 
-footer {  
-  padding: 20px 0px; /* Equal padding on the left and right sides */
-  overflow: auto;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 85%;
-  }
-
 .logo {
   position: absolute;
   top: 0;
@@ -115,7 +107,7 @@ footer {
 
 .logo7 {
   position:absolute;
-  margin-top: -130px; 
+  margin-top: -170px; 
   display: block;
   right: 0;
   z-index: -1; 
@@ -159,6 +151,13 @@ input[type="submit"] {
   font-size: 16px;
 }
 
+footer {  
+  padding: 20px 0px; /* Equal padding on the left and right sides */
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  }
 
 .footer-content {
   margin-top: -10px; /* Adjust this value as needed */
@@ -169,3 +168,6 @@ input[type="submit"] {
   margin: 0 0; /* Adjust this value as needed */
 }
 
+.footer-content hr {
+  margin-top: -17px; /* Adjust this value as needed */
+}
