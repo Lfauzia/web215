@@ -62,7 +62,7 @@ main {
   background-color: #fbe8da;
   max-width: 850px;
   margin: 7px auto;
-  padding: 10px 40px;
+  padding: 10px 50px;
   border-radius: 50px;
   box-shadow: 0 12px 18px #0000001A;
   /*margin-bottom: 15px; */
@@ -112,7 +112,7 @@ main a[href="introduction.html"] {
 }
 
 #form-cont { 
-  height: 680px;
+  height: 915px;
   margin: 10px auto;
   text-align: left;
   margin-bottom: 20px;
@@ -153,6 +153,8 @@ input[type="submit"] {
 textarea {
   margin: 0;
   padding: 0;
+  height: 50px; 
+  width: 30%; 
 }
 
 
