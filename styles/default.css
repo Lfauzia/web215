@@ -127,6 +127,13 @@ label {
   width: 250px;
 }
 
+textarea {
+  margin: 0;
+  padding: 0;
+  height: 50px; 
+  width: 30%; 
+}
+
 /* Adjustments for specific elements */
 #submit {
   margin-left: 350px;
@@ -150,12 +157,7 @@ input[type="submit"] {
   font-size: 16px;
 }
 
-textarea {
-  margin: 0;
-  padding: 0;
-  height: 50px; 
-  width: 30%; 
-}
+
 
 
 footer {  
