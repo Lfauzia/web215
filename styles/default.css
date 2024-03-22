@@ -125,7 +125,9 @@ label {
   display: inline-block;
   margin-bottom: 20px;
   width: 250px;
+  list-style-type: disc; 
 }
+ 
 
 textarea {
   margin: 0;
