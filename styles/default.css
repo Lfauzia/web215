@@ -124,6 +124,7 @@ label {
   margin-right: 200px;
   display: inline-block;
   margin-bottom: 20px;
+  width: 250px;
 }
 
 /* Adjustments for specific elements */
@@ -148,6 +149,12 @@ input[type="submit"] {
   cursor: pointer;
   font-size: 16px;
 }
+
+textarea {
+  margin: 0;
+  padding: 0;
+}
+
 
 footer {  
   padding: 20px 0px; /* Equal padding on the left and right sides */
