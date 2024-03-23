@@ -57,16 +57,13 @@ a {
   text-decoration: none;
 }
 
-
 main {
   background-color: #fbe8da;
   max-width: 850px;
   margin: 7px auto;
   padding: 10px 50px;
   border-radius: 50px;
-  box-shadow: 0 12px 18px #0000001A;
-  
-  
+  box-shadow: 0 12px 18px #0000001A; 
 }
 
 main > figure > figcaption  {
@@ -87,7 +84,6 @@ main p:nth-child(2) a {
 #signature {
   font-style: italic;
 }
-
 
 main a[href="https://lfauzia.github.io/web250/index.html"], 
 main a[href="index.html"], 
@@ -112,7 +108,7 @@ main a[href="introduction.html"] {
 }
 
 #form-cont { 
-  height: 1050px;
+  height: 1200px;
   margin: 20px auto;
   text-align: left;
   margin-bottom: 20px;
@@ -138,17 +134,18 @@ input[type="text"],
 input[type="file"]
  {
     flex: 1;
-    margin-left: 20px; /* Adjust as needed for proper spacing */
-    padding: 10px;
+    margin-left: 20px; 
+    padding: 3px;
 }
 
-textarea {
-  padding: 0;
-  height: 70px; 
-  width: 38%; 
-  
+textarea {  
+  height: 50px;   
 }
 
+input[type="checkbox"],
+input[type="radio"] { 
+    margin-left: 20px; 
+}
 
 #submit {
   margin-left: 370px;
