@@ -57,7 +57,7 @@ a {
   text-decoration: none;
 }
 
-/* Specific styles */
+
 main {
   background-color: #fbe8da;
   max-width: 850px;
@@ -65,7 +65,7 @@ main {
   padding: 10px 50px;
   border-radius: 50px;
   box-shadow: 0 12px 18px #0000001A;
-  /*margin-bottom: 15px; */
+  
   
 }
 
@@ -130,19 +130,19 @@ label {
   display: inline-block;
   margin-bottom: 20px;
   width: 250px;
+  margin-right: 20px;
 }
 
 textarea,
 input[type="text"],
-input[type="file"],
-input[type="submit"] {
+input[type="file"]
+ {
     flex: 1;
     margin-left: 20px; /* Adjust as needed for proper spacing */
+    padding: 10px;
 }
 
-
 textarea {
-  margin: 0;
   padding: 0;
   height: 70px; 
   width: 38%; 
@@ -151,7 +151,7 @@ textarea {
 
 
 #submit {
-  margin-left: 350px;
+  margin-left: 370px;
 }
 
 #user-photo {
@@ -169,7 +169,7 @@ input[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 footer {  
