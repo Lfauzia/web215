@@ -11,15 +11,43 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Add event listeners to input fields to check for empty values on form submission
+    const inputs = form.querySelectorAll('input, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', function () {
+            validateInput(input);
+        });
+    });
+
     function validateForm() {
         // my validation logic for each input field
         const photo = document.getElementById('user-photo').value;
         const caption = document.getElementById('photocaption').value;
         const name = document.getElementById('fullname').value;
+        const courses = document.getElementById('coursebackgroung').value;
 
-        // more validation rules 
-        if (photo === '' || caption === '' || name === '') {
-            alert('Please fill out all required fields.');
+        // Create an array to store the names of empty fields
+        const emptyFields = [];
+
+        // Check each required field and push its name to the emptyFields array if empty
+        if (photo === '') {
+            emptyFields.push('Photo');
+        }
+        if (caption === '') {
+            emptyFields.push('Caption');
+        }
+        if (name === '') {
+            emptyFields.push('Name');
+        }
+        if (courses === '') {
+            emptyFields.push('Courses');
+        }
+
+        // If there are empty fields, construct and display a warning message
+        if (emptyFields.length > 0) {
+            // Construct the warning message
+            const errorMessage = `Please fill out all required fields: ${emptyFields.join(', ')}.`;
+            alert(errorMessage);
             return false;
         }
 
@@ -97,6 +125,15 @@ document.addEventListener('DOMContentLoaded', function () {
             };
 
             reader.readAsDataURL(userPhotoInput.files[0]);
+        }
+    }
+
+    // Function to validate individual input fields
+    function validateInput(input) {
+        if (input.value.trim() === '') {
+            // If the input value is empty, show a warning message for the corresponding label
+            const label = input.closest('label').textContent.split(':')[0];
+            alert(`${label} should not be empty.`);
         }
     }
 });
