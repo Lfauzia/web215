@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const caption = document.getElementById('photocaption').value;
         const name = document.getElementById('fullname').value;
         const courses = document.getElementById('coursebackgroung').value;
+        const additionalShare = document.getElementById('additionalshare').value;
 
         // Create an array to store the names of empty fields
         const emptyFields = [];
@@ -41,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (courses === '') {
             emptyFields.push('Courses');
+        }
+
+        if (additionalShare === '') { // Validate the additional textarea
+            emptyFields.push('Additional Share');
         }
 
         // If there are empty fields, construct and display a warning message
@@ -77,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const coursesRaw = document.getElementById('coursebackgroung').value;
         const coursesList = coursesRaw.split(',').map(course => course.trim()); // Split courses by commas and trim whitespace
         const funnyItem = document.getElementById('funny').value;
+        const additionalShare = document.getElementById('additionalshare').value;
         const enjoyCoding = document.querySelector('input[name="enjoycoding"]:checked').value;
         const programmingLanguages = document.querySelectorAll('input[name="programinglanguages"]:checked');
         const userPhoto = document.getElementById('user-photo').files[0];
@@ -102,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
                 </ul>
                 <li><strong>Funny Item to Remember me by:</strong> ${funnyItem}</li>
+                <li><strong>I'd also like to Share:</strong> ${additionalShare}</li>
                 <li><strong>Do you enjoy coding?</strong> ${enjoyCoding}</li>
                 <li><strong>Programming languages you know:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</li>
             </ul>
