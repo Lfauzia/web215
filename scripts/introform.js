@@ -24,8 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const photo = document.getElementById('user-photo').value;
         const caption = document.getElementById('photocaption').value;
         const name = document.getElementById('fullname').value;
-        const courses = document.getElementById('coursebackgroung').value;
+        const courses = document.getElementById('coursebackground').value;
         const additionalShare = document.getElementById('additionalshare').value;
+        const pBack = document.getElementById('personalbackground').value;
+        const proBack = document.getElementById('probackground').value;
+        const acaBack = document.getElementById('acabackground').value;
+        const subBack = document.getElementById('subbackground').value;
+        const platform = document.getElementById('platform').value;
+        const funnyItem = document.getElementById('funny').value;
+        
+
 
         // Create an array to store the names of empty fields
         const emptyFields = [];
@@ -47,6 +55,27 @@ document.addEventListener('DOMContentLoaded', function () {
         if (additionalShare === '') { // Validate the additional textarea
             emptyFields.push('Additional Share');
         }
+
+        if (pBack == '' ) { // Validate the additional textarea
+            emptyFields.push('Personal Background');
+        }
+
+        if (proBack == '') { emptyFields.push('Professional Background');
+        }
+
+        if (acaBack == '') { emptyFields.push('Academic Background');
+        }
+
+        if (subBack == '') { emptyFields.push('Subject Background')
+
+        }
+        
+        if (platform == '') { emptyFields.push('Computer Platform');
+        }
+
+        if (funnyItem == '') { emptyFields.push('Funny Item');
+        }
+
 
         // If there are empty fields, construct and display a warning message
         if (emptyFields.length > 0) {
@@ -74,12 +103,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Get values from the form
         const name = document.getElementById('fullname').value;
-        const personalBackground = document.getElementById('personalbackgroung').value;
-        const professionalBackground = document.getElementById('probackgroung').value;
-        const academicBackground = document.getElementById('acabackgroung').value;
-        const subjectBackground = document.getElementById('subbackgroung').value;
+        const personalBackground = document.getElementById('personalbackground').value;
+        const professionalBackground = document.getElementById('probackground').value;
+        const academicBackground = document.getElementById('acabackground').value;
+        const subjectBackground = document.getElementById('subbackground').value;
         const platform = document.getElementById('platform').value;
-        const coursesRaw = document.getElementById('coursebackgroung').value;
+        const coursesRaw = document.getElementById('coursebackground').value;
         const coursesList = coursesRaw.split(',').map(course => course.trim()); // Split courses by commas and trim whitespace
         const funnyItem = document.getElementById('funny').value;
         const additionalShare = document.getElementById('additionalshare').value;
