@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return true;
     }
-
     function displayResults() {
         const formContainer = document.getElementById('form-cont');
         const formBackgroundColor = window.getComputedStyle(formContainer).getPropertyValue('background-color');
@@ -56,24 +55,27 @@ document.addEventListener('DOMContentLoaded', function () {
         const formattedCourses = coursesList.map(course => course.replace(/(WEB250-N801-|WEB215-N801-|CSC221-N801)/g, '<strong>$1</strong>'));
 
         // results HTML
-        const resultsHTML = `
-            <div style="text-align: center;">
-                <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 250px;">
-                <figcaption style="font-style: italic;">${caption}</figcaption>
-            </div>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Personal Background:</strong> ${personalBackground}</p>
-            <p><strong>Professional Background:</strong> ${professionalBackground}</p>
-            <p><strong>Academic Background:</strong> ${academicBackground}</p>
-            <p><strong>Subject Background:</strong> ${subjectBackground}</p>
-            <p><strong>Primary Computer Platform:</strong> ${platform}</p>
-            <p><strong>Courses I'm taking & why:</strong></p>
+                const resultsHTML = `
             <ul>
-                ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
+                <div style="text-align: center;">
+                    <h3>${name}</h3>
+                    <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 250px;">
+                    <figcaption style="font-style: italic;">${caption}</figcaption>
+                </div>
+                
+                <li><strong>Personal Background:</strong> ${personalBackground}</li>
+                <li><strong>Professional Background:</strong> ${professionalBackground}</li>
+                <li><strong>Academic Background:</strong> ${academicBackground}</li>
+                <li><strong>Subject Background:</strong> ${subjectBackground}</li>
+                <li><strong>Primary Computer Platform:</strong> ${platform}</li>
+                <li><strong>Courses I'm taking & why:</strong></li>
+                <ul>
+                    ${formattedCourses.map(course => `<li>${course}</li>`).join('')}
+                </ul>
+                <li><strong>Funny Item to Remember me by:</strong> ${funnyItem}</li>
+                <li><strong>Do you enjoy coding?</strong> ${enjoyCoding}</li>
+                <li><strong>Programming languages you know:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</li>
             </ul>
-            <p><strong>Funny Item to Remember me by:</strong> ${funnyItem}</p>
-            <p><strong>Do you enjoy coding?</strong> ${enjoyCoding}</p>
-            <p><strong>Programming languages you know:</strong> ${Array.from(programmingLanguages).map(lang => lang.value).join(', ')}</p>
         `;
     
         // Append the results to the form container
