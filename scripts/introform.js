@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <ul>
                 <div style="text-align: center;">
                     <h3>${name}</h3>
-                    <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 250px;">
+                    <img src="${URL.createObjectURL(userPhoto)}" alt="User Photo" style="display: block; margin: 0 auto; width: 350px;">
                     <figcaption style="font-style: italic;">${caption}</figcaption>
                 </div>
                 
