@@ -14,11 +14,15 @@
           
       <p>&copy;2024 Allé Youpi. All rights reserved.</p>
       <p>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flfauzia.github.io%2Fweb215%2Findex.html">
-        <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        <a href="https://validator.w3.org/check?uri=" id="validation_link_html">        
+          <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML.">
         </a>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flfauzia.github.io%2Fweb215%2Fstyles%2Fdefault.css">
+        <a href="https://jigsaw.w3.org/css-validator/check/referer?uri="id="validation_link_css">
         <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS.">
         </a>
+        <script>
+          document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+          document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
       </p>    
   </footer>
