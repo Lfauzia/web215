@@ -1,5 +1,5 @@
 /*! HTMLInclude v1.1.1 | MIT License | github.com/paul-browne/HTMLInclude */ 
-!function(w, d) {
+(function(w, d) {
     if (!w.HTMLInclude) {
         w.HTMLInclude = function() {
             function isInViewport(element, offset) {
@@ -27,6 +27,16 @@
                                 scripts[i].src ? newScript.src = scripts[i].src : newScript.innerHTML = scripts[i].innerHTML;
                                 d.head.appendChild(newScript);
                                 i++;
+                            }
+                        });
+                        // Add active class based on current page
+                        var currentPage = window.location.pathname.split("/").pop();
+                        var navLinks = document.querySelectorAll("nav a");
+                        navLinks.forEach(function(link) {
+                            if (link.getAttribute("href") === currentPage) {
+                                link.classList.add("active");
+                            } else {
+                                link.classList.remove("active");
                             }
                         });
                     }
@@ -62,4 +72,4 @@
         }
     }
     w.HTMLInclude();
-}(window, document)
+})(window, document);
